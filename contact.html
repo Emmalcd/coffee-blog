@@ -38,42 +38,38 @@
       </div>
     </header>
     <main class="contenedor">
-      <h3 class="centrar-texto">About Us</h3>
-      <div class="sobre-nosotros">
-        <div class="sobre-nosotros__imagen">
-          <img
-            loading="lazy"
-            src="img/nosotros.jpg"
-            alt="imagen sobre nosotros"
+      <h3 class="centrar-texto">Contact</h3>
+      <div class="contacto-bg"></div>
+      <form class="formulario">
+        <div class="campo">
+          <label class="campo__label" for="name">Name: </label>
+          <input
+            class="campo__field"
+            id="name"
+            type="text"
+            placeholder="Your Name"
           />
         </div>
-        <div class="sobre-nosotros__texto">
-          <p>
-            We are a group of coffee lovers who want to share our knowledge with
-            you. We have been in the coffee industry for more than 10 years and
-            we have learned a lot of things that we want to share with you. Our
-            mission is to help you learn how to make the best coffee at home. We
-            want to share with you the best recipes and tips so you can enjoy a
-            delicious cup of coffee every day.
-          </p>
-          <p>
-            Our goal is to help you learn everything you need to know about
-            coffee so you can enjoy a delicious cup of coffee every day. We want
-            to share with you the best recipes and tips so you can make the best
-            coffee at home. We want to help you learn how to make the best
-            coffee at home so you can enjoy a delicious cup of coffee every day.
-          </p>
-          <p>
-            And finally, our vision is to become the best coffee blog on the
-            internet. We want to help you learn everything you need to know
-            about coffee so you can enjoy a delicious cup of coffee every day.
-          </p>
-          <p>
-            We hope you enjoy our blog and that you learn a lot of things with
-            us.
-          </p>
+        <div class="campo">
+          <label class="campo__label" for="email">E-Mail: </label>
+          <input
+            class="campo__field"
+            id="email"
+            type="email"
+            placeholder="Your E-Mail"
+          />
         </div>
-      </div>
+        <div class="campo">
+          <label class="campo__label" for="message">Message: </label>
+          <textarea
+            class="campo__field campo__field--textarea"
+            id="message"
+          ></textarea>
+        </div>
+        <div class="campo">
+          <input type="submit" value="Send" class="boton boton--primario" />
+        </div>
+      </form>
     </main>
 
     <footer class="footer">
@@ -92,6 +88,5 @@
         </div>
       </div>
     </footer>
-    <script src="js/modernizr.js"></script>
   </body>
 </html>

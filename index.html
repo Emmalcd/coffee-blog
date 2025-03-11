@@ -4,14 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Blog</title>
-    <link rel="preconnect" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <meta
+      name="description"
+      content="A blog to learn about coffe the experts with the best recipes and tips"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- PREFETCH -->
+    <link rel="prefetch" href="about-us.html" as="document" />
+    <!-- PRELOAD -->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="preload" href="css/style.css" as="style" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -42,7 +51,14 @@
         <h3>Our Blog</h3>
         <article class="entrada">
           <div class="entrada__img">
-            <img src="img/blog1.jpg" alt="imagen blog 1" />
+            <picture>
+              <source
+                loading="lazy"
+                srcset="img/blog1.webp"
+                type="image/webp"
+              />
+              <img loading="lazy" src="img/blog1.jpg" alt="imagen blog 1" />
+            </picture>
           </div>
           <div class="entrada__contenido">
             <h4 class="no-margin">Types of coffee beans</h4>
@@ -58,7 +74,14 @@
         <!-- End of article -->
         <article class="entrada">
           <div class="entrada__img">
-            <img src="img/blog2.jpg" alt="imagen blog 2" />
+            <picture>
+              <source
+                loading="lazy"
+                srcset="img/blog2.webp"
+                type="image/webp"
+              />
+              <img loading="lazy" src="img/blog2.jpg" alt="imagen blog 2" />
+            </picture>
           </div>
           <div class="entrada__contenido">
             <h4 class="no-margin">3 Delicious coffee recipes</h4>
@@ -74,7 +97,14 @@
         <!-- End of article -->
         <article class="entrada">
           <div class="entrada__img">
-            <img src="img/blog3.jpg" alt="imagen blog 3" />
+            <picture>
+              <source
+                loading="lazy"
+                srcset="img/blog3.webp"
+                type="image/webp"
+              />
+              <img loading="lazy" src="img/blog3.jpg" alt="imagen blog 3" />
+            </picture>
           </div>
           <div class="entrada__contenido">
             <h4 class="no-margin">Coffee benefits</h4>
@@ -99,10 +129,10 @@
               <span class="widget-curso__info"> Free </span>
             </p>
             <p class="widget-curso__label">
-              Cupo:
+              Capacity:
               <span class="widget-curso__info"> 20 </span>
             </p>
-            <a href="blog-post.html" class="boton boton--secundario">More Info</a>
+            <a href="blog-post.html" class="boton boton--secundario"
               >More Info</a
             >
           </li>
@@ -114,10 +144,12 @@
               <span class="widget-curso__info"> Free </span>
             </p>
             <p class="widget-curso__label">
-              Cupo:
+              Capacity:
               <span class="widget-curso__info"> 20 </span>
             </p>
-            <a href="blog-post" class="boton boton--secundario">More Info</a>
+            <a href="blog-post.html" class="boton boton--secundario"
+              >More Info</a
+            >
           </li>
           <!-- end of widget -->
         </ul>
